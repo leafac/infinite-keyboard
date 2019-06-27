@@ -21,10 +21,15 @@
       display: block;
       float: right;
     }
+    option[disabled] {
+      font-weight: bold;
+      color: black;
+    }
   </style>
 </head>
 <body>
   <select size="2">
+    <option disabled>Emoji</option>
     <option value="😀" selected>:)</option>
     <option value="😁">:D</option>
     <option value="😛">:P</option>
@@ -36,7 +41,9 @@
     <option value="🎉">tada</option>
     <option value="¯\_(ツ)_/¯">shrug</option>
     <option value="(╯°□°）╯︵ ┻━┻">fliptable</option>
+    <option disabled></option>
 
+    <option disabled>Greek</option>
     <option value="α">alpha</option>
     <option value="β">beta</option>
     <option value="γ">gamma</option>
@@ -78,7 +85,9 @@
     <option value="Ψ">Psi</option>
     <option value="ω">omega</option>
     <option value="Ω">Omega</option>
+    <option disabled></option>
 
+    <option disabled>Technical</option>
     <option value="⌥">option</option>
     <option value="⇧">shift</option>
     <option value="⌘">command</option>
@@ -98,7 +107,9 @@
     <option value="↶">undo</option>
     <option value="↷">redo</option>
     <option value="">apple</option>
+    <option disabled></option>
 
+    <option disabled>Arrows</option>
     <option value="⇓">Downarrow</option>
     <option value="↖">nwarrow</option>
     <option value="↓">downarrow</option>
@@ -122,7 +133,7 @@
     <option value="⇇">doubleleftarrow</option>
     <option value="⇉">doublerightarrow</option>
     <option value="↝">leadsto</option>
-
+    <option disabled></option>
     
     <!--
     <optgroup label="Mathematics">
