@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    body, select {
+      background-color: rgb(236, 236, 236);
+    }
+    select {
+      box-sizing: border-box;
+      width: 100%;
+      font-size: 12px;
+      border: none;
+      outline: none;
+    }
+  </style>
+</head>
+<body>
+  <select size="18">
+    <optgroup label="Emoji">
+      <option value="😀" selected>:) 😀</option>
+      <option value="👍">+1 👍</option>
+    </optgroup>
+  </select>
+  <script>
+    const { remote, clipboard } = require("electron");
+    const { exec } = require("child_process");
+    const select = document.querySelector("select");
+    document.addEventListener("keydown", event => {
+      switch (event.key) {
+        case "Escape": select.blur(); break;
+        case "Enter":
+          select.blur();
+          clipboard.writeText(select.querySelector("option:checked").value);
+          exec(`osascript -e 'tell application "System Events" to keystroke "v" using command down'`);
+        break;
+      }
+    });
+    select.addEventListener("blur", () => {
+      remote.Menu.sendActionToFirstResponder('hide:');
+    });
+  </script>
+</body>
+</html>
