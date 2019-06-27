@@ -457,16 +457,18 @@
     const { remote, clipboard } = require("electron");
     const { exec } = require("child_process");
     const select = document.querySelector("select");
+    const done = () => {
+      select.blur();
+      clipboard.writeText(select.querySelector("option:checked").value);
+      exec(`osascript -e 'tell application "System Events" to keystroke "v" using command down'`);
+    };
     document.addEventListener("keydown", event => {
       switch (event.key) {
         case "Escape": select.blur(); break;
-        case "Enter":
-          select.blur();
-          clipboard.writeText(select.querySelector("option:checked").value);
-          exec(`osascript -e 'tell application "System Events" to keystroke "v" using command down'`);
-        break;
+        case "Enter": done(); break;
       }
     });
+    document.addEventListener("click", done);
     select.addEventListener("blur", () => { remote.Menu.sendActionToFirstResponder('hide:'); });
   </script>
 </body>
