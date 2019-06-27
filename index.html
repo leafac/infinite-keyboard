@@ -2,121 +2,126 @@
 <html lang="en">
 <head>
   <style>
-    body, select {
-      background-color: rgb(236, 236, 236);
+    body {
+      margin: 0;
     }
     select {
-      width: 100%;
+      background-color: rgb(236, 236, 236);
+      width: 100vw;
+      height: 100vh;
       font-size: 12px;
       border: none;
       outline: none;
     }
+    option {
+      padding: 5px 10px;
+    }
+    option::after {
+      content: attr(value);
+      display: block;
+      float: right;
+    }
   </style>
 </head>
 <body>
-  <select size="18">
-    <optgroup label="Emoji">
-      <option value="😀">:)</option>
-      <option value="😁">:D</option>
-      <option value="😛">:P</option>
-      <option value="😉">;)</option>
-      <option value="😘">:*</option>
-      <option value="☹️">:(</option>
-      <option value="👍">+1</option>
-      <option value="👎">-1</option>
-      <option value="🎉">tada</option>
-      <option value="¯\_(ツ)_/¯">shrug</option>
-      <option value="(╯°□°）╯︵ ┻━┻">fliptable</option>
-    </optgroup>
-    <optgroup label="Greek">
-      <option value="α">alpha</option>
-      <option value="β">beta</option>
-      <option value="γ">gamma</option>
-      <option value="Γ">Gamma</option>
-      <option value="δ">delta</option>
-      <option value="Δ">Delta</option>
-      <option value="ϵ">epsilon</option>
-      <option value="ε">varepsilon</option>
-      <option value="ζ">zeta</option>
-      <option value="η">eta</option>
-      <option value="θ">theta</option>
-      <option value="ϑ">vartheta</option>
-      <option value="Θ">Theta</option>
-      <option value="ι">iota</option>
-      <option value="κ">kappa</option>
-      <option value="Κ">Kappa</option>
-      <option value="λ">lambda</option>
-      <option value="Λ">Lambda</option>
-      <option value="μ">mu</option>
-      <option value="ν">nu</option>
-      <option value="ξ">xi</option>
-      <option value="Ξ">Xi</option>
-      <option value="π">pi</option>
-      <option value="ϖ">varpi</option>
-      <option value="Π">Pi</option>
-      <option value="ρ">rho</option>
-      <option value="ϱ">varrho</option>
-      <option value="σ">sigma</option>
-      <option value="ς">varsigma</option>
-      <option value="Σ">Sigma</option>
-      <option value="τ">tau</option>
-      <option value="υ">upsilon</option>
-      <option value="Υ">Upsilon</option>
-      <option value="φ">phi</option>
-      <option value="ϕ">varphi</option>
-      <option value="Φ">Phi</option>
-      <option value="χ">chi</option>
-      <option value="ψ">psi</option>
-      <option value="Ψ">Psi</option>
-      <option value="ω">omega</option>
-      <option value="Ω">Omega</option>
-    </optgroup>
-    <optgroup label="Technical">
-      <option value="⌥">option</option>
-      <option value="⇧">shift</option>
-      <option value="⌘">command</option>
-      <option value="⎄">compose</option>
-      <option value="⎋">esc</option>
-      <option value="⌫">backspace</option>
-      <option value="⇥">tab</option>
-      <option value="↩">return</option>
-      <option value="⌤">enter</option>
-      <option value="↖">home</option>
-      <option value="↘">end</option>
-      <option value="⇞">pageup</option>
-      <option value="⇟">pagedown</option>
-      <option value="⌦">delete</option>
-      <option value="⌧">numlock</option>
-      <option value="⎙">printscreen</option>
-      <option value="↶">undo</option>
-      <option value="↷">redo</option>
-      <option value="">apple</option>
-    </optgroup>
-    <optgroup label="Arrows">
-      <option value="⇓">Downarrow</option>
-      <option value="↖">nwarrow</option>
-      <option value="↓">downarrow</option>
-      <option value="⇒">Rightarrow</option>
-      <option value="→">rightarrow</option>
-      <option value="↦">|-></option>
-      <option value="↦">mapsto</option>
-      <option value="↤"><-|</option>
-      <option value="↤">reversemapsto</option>
-      <option value="↘">searrow</option>
-      <option value="↙">swarrow</option>
-      <option value="←">leftarrow</option>
-      <option value="↑">uparrow</option>
-      <option value="⇐">Leftarrow</option>
-      <option value="⇑">Uparrow</option>
-      <option value="⇔">Leftrightarrow</option>
-      <option value="↕">updownarrow</option>
-      <option value="↔">leftrightarrow</option>
-      <option value="↗">nearrow</option>
-      <option value="⇕">Updownarrow</option>
-      <option value="⇇">doubleleftarrow</option>
-      <option value="⇉">doublerightarrow</option>
-      <option value="↝">leadsto</option>
-    </optgroup>
+  <select size="2">
+    <option value="😀" selected>:)</option>
+    <option value="😁">:D</option>
+    <option value="😛">:P</option>
+    <option value="😉">;)</option>
+    <option value="😘">:*</option>
+    <option value="☹️">:(</option>
+    <option value="👍">+1</option>
+    <option value="👎">-1</option>
+    <option value="🎉">tada</option>
+    <option value="¯\_(ツ)_/¯">shrug</option>
+    <option value="(╯°□°）╯︵ ┻━┻">fliptable</option>
+
+    <option value="α">alpha</option>
+    <option value="β">beta</option>
+    <option value="γ">gamma</option>
+    <option value="Γ">Gamma</option>
+    <option value="δ">delta</option>
+    <option value="Δ">Delta</option>
+    <option value="ϵ">epsilon</option>
+    <option value="ε">varepsilon</option>
+    <option value="ζ">zeta</option>
+    <option value="η">eta</option>
+    <option value="θ">theta</option>
+    <option value="ϑ">vartheta</option>
+    <option value="Θ">Theta</option>
+    <option value="ι">iota</option>
+    <option value="κ">kappa</option>
+    <option value="Κ">Kappa</option>
+    <option value="λ">lambda</option>
+    <option value="Λ">Lambda</option>
+    <option value="μ">mu</option>
+    <option value="ν">nu</option>
+    <option value="ξ">xi</option>
+    <option value="Ξ">Xi</option>
+    <option value="π">pi</option>
+    <option value="ϖ">varpi</option>
+    <option value="Π">Pi</option>
+    <option value="ρ">rho</option>
+    <option value="ϱ">varrho</option>
+    <option value="σ">sigma</option>
+    <option value="ς">varsigma</option>
+    <option value="Σ">Sigma</option>
+    <option value="τ">tau</option>
+    <option value="υ">upsilon</option>
+    <option value="Υ">Upsilon</option>
+    <option value="φ">phi</option>
+    <option value="ϕ">varphi</option>
+    <option value="Φ">Phi</option>
+    <option value="χ">chi</option>
+    <option value="ψ">psi</option>
+    <option value="Ψ">Psi</option>
+    <option value="ω">omega</option>
+    <option value="Ω">Omega</option>
+
+    <option value="⌥">option</option>
+    <option value="⇧">shift</option>
+    <option value="⌘">command</option>
+    <option value="⎄">compose</option>
+    <option value="⎋">esc</option>
+    <option value="⌫">backspace</option>
+    <option value="⇥">tab</option>
+    <option value="↩">return</option>
+    <option value="⌤">enter</option>
+    <option value="↖">home</option>
+    <option value="↘">end</option>
+    <option value="⇞">pageup</option>
+    <option value="⇟">pagedown</option>
+    <option value="⌦">delete</option>
+    <option value="⌧">numlock</option>
+    <option value="⎙">printscreen</option>
+    <option value="↶">undo</option>
+    <option value="↷">redo</option>
+    <option value="">apple</option>
+
+    <option value="⇓">Downarrow</option>
+    <option value="↖">nwarrow</option>
+    <option value="↓">downarrow</option>
+    <option value="⇒">Rightarrow</option>
+    <option value="→">rightarrow</option>
+    <option value="↦">|-></option>
+    <option value="↦">mapsto</option>
+    <option value="↤"><-|</option>
+    <option value="↤">reversemapsto</option>
+    <option value="↘">searrow</option>
+    <option value="↙">swarrow</option>
+    <option value="←">leftarrow</option>
+    <option value="↑">uparrow</option>
+    <option value="⇐">Leftarrow</option>
+    <option value="⇑">Uparrow</option>
+    <option value="⇔">Leftrightarrow</option>
+    <option value="↕">updownarrow</option>
+    <option value="↔">leftrightarrow</option>
+    <option value="↗">nearrow</option>
+    <option value="⇕">Updownarrow</option>
+    <option value="⇇">doubleleftarrow</option>
+    <option value="⇉">doublerightarrow</option>
+    <option value="↝">leadsto</option>
 
     
     <!--
@@ -453,8 +458,6 @@
     const { remote, clipboard } = require("electron");
     const { exec } = require("child_process");
     const select = document.querySelector("select");
-    select.selectedIndex = 0;
-    select.querySelectorAll("option").forEach(option => { option.textContent += ` ${option.value}` });
     document.addEventListener("keydown", event => {
       switch (event.key) {
         case "Escape": select.blur(); break;

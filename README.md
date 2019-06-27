@@ -12,5 +12,3 @@ TODO
 <optgroup label="">
 </optgroup>
 ```
-- [ ] Align symbols to the right.
-- [ ] Remove margin?
