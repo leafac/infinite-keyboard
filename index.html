@@ -21,6 +21,10 @@
       display: block;
       float: right;
     }
+    option[disabled] {
+      color: black;
+      font-weight: bold;
+    }
   </style>
 </head>
 <body>
@@ -31,7 +35,7 @@
     <!-- https://github.com/rrthomas/pointless-xcompose/blob/master/xcompose -->
     <!-- https://en.wikibooks.org/wiki/Unicode/List_of_useful_symbols -->
 
-    <!-- Emoji -->
+    <option disabled>Emoji</option>
     <option value="😀" selected>:)</option>
     <option value="😛">:P</option>
     <option value="😉">;)</option>
@@ -51,7 +55,7 @@
     <option value="(╯°□°）╯︵ ┻━┻">fliptable</option>
     <option value="ಠ_ಠ">disapproval</option>
 
-    <!-- Arrows -->
+    <option disabled>Arrows</option>
     <option value="↑">uparrow</option>
     <option value="⇑">Uparrow</option>
     <option value="↗">nearrow</option>
@@ -80,7 +84,7 @@
     <option value="⇉">doublerightarrow</option>
     <option value="⇇">doubleleftarrow</option>
 
-    <!-- Greek -->
+    <option disabled>Greek</option>
     <option value="α">alpha</option>
     <option value="β">beta</option>
     <option value="γ">gamma</option>
@@ -123,7 +127,7 @@
     <option value="ω">omega</option>
     <option value="Ω">Omega</option>
 
-    <!-- Technical -->
+    <option disabled>Technical</option>
     <option value="⌘">Command</option>
     <option value="⌥">Option</option>
     <option value="⇧">Shift</option>
@@ -140,9 +144,9 @@
     <option value="↘">End</option>
     <option value="⇞">Page Up</option>
     <option value="⇟">Page Down</option>
-    
+
     <!--
-    <optgroup label="Mathematics">
+    <option disabled>Mathematics</option>
     <option value="א">aleph</option>
     <option value="′">'</option>
     <option value="′">prime</option>
@@ -156,11 +160,11 @@
     <option value="∃">exists</option>
     <option value="∞">infty</option>
     <option value="∞">infinity</option>
-    <option value="∘">circ.</option>
+    <option value="∘">circ</option>
     <option value="±">+-</option>
     <option value="±">pm</option>
     <option value="∩">cap</option>
-    <option value="◇">diamond.</option>
+    <option value="◇">diamond</option>
     <option value="⊕">oplus</option>
     <option value="∓">-+</option>
     <option value="∓">mp</option>
@@ -192,11 +196,11 @@
     <option value="≡">equiv</option>
     <option value="⊨">|=</option>
     <option value="⊨">models</option>
-    <option value="≺">prec.</option>
-    <option value="≻">succ.</option>
+    <option value="≺">prec</option>
+    <option value="≻">succ</option>
     <option value="⋖">precdot</option>
     <option value="⋗">succdot</option>
-    <option value="∼">sim.</option>
+    <option value="∼">sim</option>
     <option value="⊥">perp</option>
     <option value="⊥">bot</option>
     <option value="⊤">top</option>
@@ -208,8 +212,8 @@
     <option value="≍">asymp</option>
     <option value="∥">||</option>
     <option value="∥">parallel</option>
-    <option value="⊂">subset.</option>
-    <option value="⊃">supset.</option>
+    <option value="⊂">subset</option>
+    <option value="⊃">supset</option>
     <option value="≈">approx</option>
     <option value="⋈">bowtie</option>
     halfbowtie:
@@ -222,26 +226,26 @@
     <option value="⊏">sqsubsetb</option>
     <option value="⊐">sqsupsetb</option>
     <option value="≠">neq</option>
-    <option value="⌣">smile.</option>
+    <option value="⌣">smile</option>
     <option value="⊑">sqsubseteq</option>
     <option value="⊒">sqsupseteq</option>
     <option value="≐">doteq</option>
-    <option value="⌢">frown.</option>
-    <option value="∈">in.</option>
+    <option value="⌢">frown</option>
+    <option value="∈">in</option>
     <option value="∋">ni</option>
     <option value="∉">notin</option>
     <option value="∝">propto</option>
     <option value="⊢">vdash</option>
     <option value="⊣">dashv</option>
-    <option value="·">.</option>
-    <option value="·">cdot.</option>
+    <option value="·"></option>
+    <option value="·">cdot</option>
     <option value="∑">sum</option>
     <option value="∏">prod</option>
     <option value="∐">coprod</option>
     <option value="∫">int</option>
     <option value="∮">oint</option>
     <option value="√">sqrt</option>
-    <option value="ł">l.</option>
+    <option value="ł">l</option>
     <option value="◖">(|</option>
     <option value="◗">|)</option>
     semicircle:
@@ -250,10 +254,10 @@
     <option value="≁">$`</option>
     <option value="≁">nottilde</option>
     <option value="ℓ">ell</option>
-    <option value="ℕ">N.</option>
-    <option value="ℝ">R.</option>
-    <option value="ℤ">Z.</option>
-    <option value="ℙ">P.</option>
+    <option value="ℕ">N</option>
+    <option value="ℝ">R</option>
+    <option value="ℤ">Z</option>
+    <option value="ℙ">P</option>
     <option value="⌈">{</option>
     <option value="⌈">leftceiling</option>
     <option value="⌉">}</option>
@@ -269,11 +273,11 @@
     <option value="∵">because</option>
     <option value="¦">brokenbar</option>
     <option value="∘">ring</option>
-  </optgroup>
 
 ######################################################################################################
 # TYPOGRAPHY
 
+    <option disabled>Typography</option>
   <option value="★">star</option>
   <option value="•">bullet</option>
   <option value="◦">whitebullet</option>
@@ -294,12 +298,12 @@
   <option value="✗">mark</option>
   <option value="✔">heavycheck</option>
   <option value="✘">heavymark</option>
-  <option value="§">S.</option>
+  <option value="§">S</option>
   <option value="§">section</option>
   <option value="¶">paragraph</option>
-  <option value="¶">P.</option>
+  <option value="¶">P</option>
   <option value="※">reference</option>
-  <option value="‐">hyphen.</option>
+  <option value="‐">hyphen</option>
   <option value="‑">nonbreakinghyphen</option>
   <option value="–">endash</option>
   <option value="—">emdash</option>
@@ -317,133 +321,129 @@
   <option value="‍">zerowidthjoiner</option>
   <option value="⁠">wordjoiner</option>
   <option value="〃">ditto</option>
-  <option value="❤">heart.</option>
+  <option value="❤">heart</option>
   <option value="⸙">palm</option>
   <option value="❦">floral</option>
   <option value="❧">rotatedfloral</option>
 
-######################################################################################################
-# SUPERSCRIPTS
-
-  '6':
-    <option value="⁰">'0'</option>
-    <option value="¹">'1'</option>
-    <option value="²">'2'</option>
-    <option value="³">'3'</option>
-    <option value="⁴">'4'</option>
-    <option value="⁵">'5'</option>
-    <option value="⁶">'6'</option>
-    <option value="⁷">'7'</option>
-    <option value="⁸">'8'</option>
-    <option value="⁹">'9'</option>
-    <option value="⁺">+</option>
-    <option value="⁻">-</option>
-    <option value="⁼">=</option>
-    <option value="⁽">(</option>
-    <option value="⁾">)</option>
-    <option value="ᵃ">a.</option>
-    <option value="ᵇ">b.</option>
-    <option value="ᶜ">c</option>
-    <option value="ᵈ">d.</option>
-    <option value="ᵉ">e</option>
-    <option value="ᶠ">f</option>
-    <option value="ᵍ">g.</option>
-    <option value="ʰ">h</option>
-    <option value="ⁱ">i.</option>
-    <option value="ʲ">j</option>
-    <option value="ᵏ">k</option>
-    <option value="ˡ">l</option>
-    <option value="ᵐ">m</option>
-    <option value="ⁿ">n</option>
-    <option value="ᵒ">o</option>
-    <option value="ᵖ">p.</option>
-    <option value="ʳ">r</option>
-    <option value="ˢ">s</option>
-    <option value="ᵗ">t.</option>
-    <option value="ᵘ">u</option>
-    <option value="ᵛ">v</option>
-    <option value="ʷ">w</option>
-    <option value="ˣ">x.</option>
-    <option value="ʸ">y</option>
-    <option value="ᶻ">z</option>
-    <option value="ᴬ">A</option>
-    <option value="ᴮ">B</option>
-    <option value="ᴰ">D</option>
-    <option value="ᴱ">E</option>
-    <option value="ᴳ">G</option>
-    <option value="ᴴ">H</option>
-    <option value="ᴵ">I</option>
-    <option value="ᴶ">J</option>
-    <option value="ᴷ">K</option>
-    <option value="ᴸ">L</option>
-    <option value="ᴹ">M</option>
-    <option value="ᴺ">N</option>
-    <option value="ᴼ">O</option>
-    <option value="ᴾ">P</option>
-    <option value="ᴿ">R</option>
-    <option value="ᵀ">T</option>
-    <option value="ᵁ">U</option>
-    <option value="ⱽ">V</option>
-    <option value="ᵂ">W</option>
-    <option value="ᵅ">alpha</option>
-    <option value="ᵝ">beta</option>
-    <option value="ᵞ">gamma</option>
-    <option value="ᵟ">delta</option>
-    <option value="ᶿ">theta</option>
-    <option value="ᶥ">iota</option>
-    <option value="ᵠ">phi</option>
-    <option value="ᵡ">xi</option>
-
-######################################################################################################
-# SUBSCRIPTS
-
-  _:
-    <option value="₀">'0'</option>
-    <option value="₁">'1'</option>
-    <option value="₂">'2'</option>
-    <option value="₃">'3'</option>
-    <option value="₄">'4'</option>
-    <option value="₅">'5'</option>
-    <option value="₆">'6'</option>
-    <option value="₇">'7'</option>
-    <option value="₈">'8'</option>
-    <option value="₉">'9'</option>
-    <option value="₊">+</option>
-    <option value="₋">-</option>
-    <option value="₌">=</option>
-    <option value="₍">(</option>
-    <option value="₎">)</option>
-    <option value="ₐ">a</option>
-    <option value="ₑ">e</option>
-    <option value="ₕ">h</option>
-    <option value="ᵢ">i</option>
-    <option value="ⱼ">j</option>
-    <option value="ₖ">k</option>
-    <option value="ₗ">l</option>
-    <option value="ₘ">m</option>
-    <option value="ₙ">n</option>
-    <option value="ₒ">o</option>
-    <option value="ₚ">p.</option>
-    <option value="ᵣ">r.</option>
-    <option value="ₛ">s</option>
-    <option value="ₜ">t</option>
-    <option value="ᵤ">u</option>
-    <option value="ᵥ">v</option>
-    <option value="ₓ">x.</option>
-    <option value="ᵦ">beta</option>
-    <option value="ᵧ">gamma</option>
-    <option value="ᵨ">rho</option>
-    <option value="ᵩ">phi</option>
-    <option value="ᵪ">xi</option>
 -->
-    <!-- Combinding Accents -->
+
+    <option disabled>Superscripts</option>
+    <option value="⁰">^0</option>
+    <option value="¹">^1</option>
+    <option value="²">^2</option>
+    <option value="³">^3</option>
+    <option value="⁴">^4</option>
+    <option value="⁵">^5</option>
+    <option value="⁶">^6</option>
+    <option value="⁷">^7</option>
+    <option value="⁸">^8</option>
+    <option value="⁹">^9</option>
+    <option value="⁺">^+</option>
+    <option value="⁻">^-</option>
+    <option value="⁼">^=</option>
+    <option value="⁽">^(</option>
+    <option value="⁾">^)</option>
+    <option value="ᵃ">^a</option>
+    <option value="ᵇ">^b</option>
+    <option value="ᶜ">^c</option>
+    <option value="ᵈ">^d</option>
+    <option value="ᵉ">^e</option>
+    <option value="ᶠ">^f</option>
+    <option value="ᵍ">^g</option>
+    <option value="ʰ">^h</option>
+    <option value="ⁱ">^i</option>
+    <option value="ʲ">^j</option>
+    <option value="ᵏ">^k</option>
+    <option value="ˡ">^l</option>
+    <option value="ᵐ">^m</option>
+    <option value="ⁿ">^n</option>
+    <option value="ᵒ">^o</option>
+    <option value="ᵖ">^p</option>
+    <option value="ʳ">^r</option>
+    <option value="ˢ">^s</option>
+    <option value="ᵗ">^t</option>
+    <option value="ᵘ">^u</option>
+    <option value="ᵛ">^v</option>
+    <option value="ʷ">^w</option>
+    <option value="ˣ">^x</option>
+    <option value="ʸ">^y</option>
+    <option value="ᶻ">^z</option>
+    <option value="ᴬ">^A</option>
+    <option value="ᴮ">^B</option>
+    <option value="ᴰ">^D</option>
+    <option value="ᴱ">^E</option>
+    <option value="ᴳ">^G</option>
+    <option value="ᴴ">^H</option>
+    <option value="ᴵ">^I</option>
+    <option value="ᴶ">^J</option>
+    <option value="ᴷ">^K</option>
+    <option value="ᴸ">^L</option>
+    <option value="ᴹ">^M</option>
+    <option value="ᴺ">^N</option>
+    <option value="ᴼ">^O</option>
+    <option value="ᴾ">^P</option>
+    <option value="ᴿ">^R</option>
+    <option value="ᵀ">^T</option>
+    <option value="ᵁ">^U</option>
+    <option value="ⱽ">^V</option>
+    <option value="ᵂ">^W</option>
+    <option value="ᵅ">^alpha</option>
+    <option value="ᵝ">^beta</option>
+    <option value="ᵞ">^gamma</option>
+    <option value="ᵟ">^delta</option>
+    <option value="ᶿ">^theta</option>
+    <option value="ᶥ">^iota</option>
+    <option value="ᵠ">^phi</option>
+    <option value="ᵡ">^xi</option>
+
+    <option disabled>Subscripts</option>
+    <option value="₀">_0</option>
+    <option value="₁">_1</option>
+    <option value="₂">_2</option>
+    <option value="₃">_3</option>
+    <option value="₄">_4</option>
+    <option value="₅">_5</option>
+    <option value="₆">_6</option>
+    <option value="₇">_7</option>
+    <option value="₈">_8</option>
+    <option value="₉">_9</option>
+    <option value="₊">_+</option>
+    <option value="₋">_-</option>
+    <option value="₌">_=</option>
+    <option value="₍">_(</option>
+    <option value="₎">_)</option>
+    <option value="ₐ">_a</option>
+    <option value="ₑ">_e</option>
+    <option value="ₕ">_h</option>
+    <option value="ᵢ">_i</option>
+    <option value="ⱼ">_j</option>
+    <option value="ₖ">_k</option>
+    <option value="ₗ">_l</option>
+    <option value="ₘ">_m</option>
+    <option value="ₙ">_n</option>
+    <option value="ₒ">_o</option>
+    <option value="ₚ">_p</option>
+    <option value="ᵣ">_r</option>
+    <option value="ₛ">_s</option>
+    <option value="ₜ">_t</option>
+    <option value="ᵤ">_u</option>
+    <option value="ᵥ">_v</option>
+    <option value="ₓ">_x</option>
+    <option value="ᵦ">_beta</option>
+    <option value="ᵧ">_gamma</option>
+    <option value="ᵨ">_rho</option>
+    <option value="ᵩ">_phi</option>
+    <option value="ᵪ">_xi</option>
+
+    <option disabled>Combining Accents</option>
     <option value="́">Combining Acute</option>
     <option value="̂">Combining Circumflex</option>
     <option value="̃">Combining Tilde</option>
     <option value="̀">Combining Grave</option>
     <option value="̈">Combining Diaeresis</option>
 
-    <!-- Music -->
+    <option disabled>Music</option>
     <option value="♩">Quarter Note</option>
     <option value="♪">Eigth Note</option>
     <option value="♫">Beamed Eigth Notes</option>
