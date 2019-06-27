@@ -25,18 +25,30 @@
 </head>
 <body>
   <select size="2">
+    <!-- https://emoji.muan.co -->
+    <!-- https://textfac.es -->
+    <!-- https://docs.racket-lang.org/drracket/Keyboard_Shortcuts.html#%28part._.La.Te.X_and_.Te.X_inspired_keybindings%29 -->
+    <!-- https://github.com/rrthomas/pointless-xcompose/blob/master/xcompose -->
+    <!-- https://en.wikibooks.org/wiki/Unicode/List_of_useful_symbols -->
+
+    <!-- Emoji -->
     <option value="😀" selected>:)</option>
-    <option value="😁">:D</option>
     <option value="😛">:P</option>
     <option value="😉">;)</option>
     <option value="😘">:*</option>
-    <option value="☹️">:(</option>
+    <option value="😍">S2</option>
+    <option value="☹">:(</option>
+    <option value="👋">wave</option>
     <option value="👍">+1</option>
     <option value="👎">-1</option>
     <option value="🎉">tada</option>
+    <option value="💩">poop</option>
+    <option value="🙏">pray</option>
     <option value="¯\_(ツ)_/¯">shrug</option>
     <option value="(╯°□°）╯︵ ┻━┻">fliptable</option>
+    <option value="ಠ_ಠ">disapproval</option>
 
+    <!-- Greek -->
     <option value="α">alpha</option>
     <option value="β">beta</option>
     <option value="γ">gamma</option>
@@ -440,18 +452,19 @@
   <option value="̀">grave</option>
   <option value="̈">diaeresis</option>
 
-######################################################################################################
-# MUSIC
-
-  <option value="♩">quarter</option>
-  <option value="♪">eigth</option>
-  <option value="♫">beamedeigth</option>
-  <option value="♬">beamedsixteenth</option>
-  <option value="♭">flat</option>
-  <option value="♮">natural</option>
-  <option value="♯">sharp</option>
-
 -->
+
+    <!-- Music -->
+    <option value="♩">Quarter Note</option>
+    <option value="♪">Eigth Note</option>
+    <option value="♫">Beamed Eigth Notes</option>
+    <option value="♬">Beamed Sixteenth Notes</option>
+    <option value="♭">Flat</option>
+    <option value="𝄫">Double Flat</option>
+    <option value="♮">Natural</option>
+    <option value="♯">Sharp</option>
+    <option value="𝄞">G Clef</option>
+    <option value="𝄢">F Clef</option>
   </select>
   <script>
     const { remote, clipboard } = require("electron");
