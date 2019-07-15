@@ -12,3 +12,4 @@ Infinite Keyboard
   - Using Travis CI
 - Auto-Update:
   - https://electronjs.org/docs/tutorial/updates
+- Disable menu items & keyboard shortcuts.
