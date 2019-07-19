@@ -4,7 +4,7 @@ const emoji = require("emojilib");
 app.dock.hide();
 app.on("ready", () => {
   new BrowserWindow({ show: false });
-  const menu = Menu.buildFromTemplate(mappings.map(([from, to]) => ({ label: `${from} → ${to}`, click() {
+  const menu = Menu.buildFromTemplate(mappings.map(([from, to]) => ({ label: `${from} · ${to}`, click() {
     clipboard.writeText(to);
     exec(`osascript -e 'tell application "System Events" to keystroke "v" using command down'`);
   }})));

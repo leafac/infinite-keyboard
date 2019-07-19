@@ -13,3 +13,6 @@ Infinite Keyboard
 - Auto-Update:
   - https://electronjs.org/docs/tutorial/updates
 - Disable menu items & keyboard shortcuts.
+- Multiple popups if you press the shortcut multiple times.
+
+- Advertise to Racket community
